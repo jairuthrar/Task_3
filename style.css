@@ -29,8 +29,10 @@
     font-weight: bolder;
     font-size: 50px;
     padding-bottom: 7%;  
+    width:375px;
 }
 .header p{
+   width:400px;
     color: hsl(303, 10%, 53%);
     font-weight: 700;
     font-weight: bolder;
@@ -47,6 +49,7 @@
     width: fit-content;
     line-height: 1.5em;
     padding-left: 10%;
+    padding-top: 30px;
 
 }
 
@@ -106,7 +109,7 @@
   flex-direction: column;
   position: absolute;
   top:12%;
-  left:60%;
+  left:50%;
   gap:20px;
   justify-content: center;
   align-items: center;
@@ -140,13 +143,102 @@
    width:110px;
    background-color: rgb(249, 187, 196);
    position: absolute;
-   top: 40%;
-   left:75%;
+   top: 42%;
+   left:65%;
    border: 3PX solid black;
    border-radius: 5px;
 
 }
 
+ 
+@media only screen and (max-width:  376px) {
+   
+   
+   *{
+      padding: 0;
+      margin: 0;
+   }
+
+   .header {
+      display: flex;
+   }
+
+ .header h1{
+   width:320px;
+   font-size: 45px;
+   padding-top: 50px;
+   padding-bottom: 35px;
+   padding-left: 20px;
+ }
+ .header p{
+   width:300px;
+   padding-left: 15px;
+ }
+
+ .feedback_cotainer{
+   display: flex;
+   flex-direction: column;
+ }
+
+
+ 
+ .feedback1,.feedback2,.feedback3{
+   width:300px
+ }
+
+ .feedback1 p,.feedback2 p,.feedback3 p{
+ 
+ padding-left: 20px;
+ padding-top: 2px;
+ padding-bottom: 10px;
+
+ }
+
+ .feedback_cotainer .pepole{
+   padding-left: 25px;
+
+ }
+ .feedback_cotainer .info p {
+   padding-left: 0px;
+   padding-top: 10px;
+   gap: 0;
+ }
+ .vb{
+   padding-top: 0px;
+ }
+
+ .qrcode img{
+   height: 110px;
+   width:110px;
+   background-color: rgb(249, 187, 196);
+   position:relative;
+   top:2vh;
+   left:40%;
+   border: 3PX solid black;
+   border-radius: 5px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+
+}
+.ratings{
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   position: relative;
+   top:50%;
+   left:5%
+}
+
+.rate1,.rate2,.rate3{
+   margin: 0px;
+   width:285px;
+  
+   
+}
+}
+
+
+ 
  
 
 
